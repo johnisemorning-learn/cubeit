@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CubeIt</title>
+</head>
+<body>
+  <h1>CubeIt App</h1>
+  <p>Enter a number to calculate its cube.</p>
+
+  <input id="number" type="number" />
+  <button onclick="cube()">Cube It</button>
+
+  <p id="result"></p>
+
+  <script>
+    function cube() {
+      const num = document.getElementById("number").value;
+      document.getElementById("result").innerText =
+        "Result: " + (num * num * num);
+    }
+  </script>
+</body>
+</html>
